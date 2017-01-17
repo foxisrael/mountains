@@ -1,0 +1,120 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #2c2e37;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #2c2e37;
+}
+p {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  color: #2c2e37;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.btn {
+  background: #36aeea;
+  min-width: 130px;
+  padding: 15px 25px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  background: #f6f4f4 url("../img/about-map.png");
+  min-height: 700px;
+}
+.about__content {
+  width: 350px;
+}
+.journal {
+  padding: 115px auto 90px;
+}
+.journal__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 1140px;
+  height: 760px;
+}
+.journal__item {
+  width: 380px;
+  height: 380px;
+}
+.journal__image-item-1 {
+  background-image: url("../img/journal-image-1.jpg");
+  background-repeat: no-repeat;
+}
+.journal__image-item-2 {
+  background-image: url("../img/journal-image-2.jpg");
+  background-repeat: no-repeat;
+}
+.journal__image-item-3 {
+  background-image: url("../img/journal-image-3.jpg");
+  background-repeat: no-repeat;
+}
+.journal__text-item {
+  padding: 45px 30px;
+}

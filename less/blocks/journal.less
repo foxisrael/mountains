@@ -1,13 +1,35 @@
-// Импорт стилей
-@import "variables.less";
-@import "base.less";
-@import "blocks/page-header.less";
-@import "blocks/about.less";
-@import "blocks/journal.less";
-@import "blocks/trip.less";
-@import "blocks/work.less";
-@import "blocks/travel.less";
-@import "blocks/gallery.less";
-@import "blocks/brands.less";
-@import "blocks/clients.less";
-@import "blocks/page-footer.less";
+.journal{
+  padding: 115px auto 90px;
+}
+
+.journal__items{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 1140px;
+  height: 760px;
+}
+
+.journal__item{
+  width: 380px;
+  height: 380px;
+}
+
+.journal__image-item-1{
+  background-image: url("../img/journal-image-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.journal__image-item-2{
+  background-image: url("../img/journal-image-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.journal__image-item-3{
+  background-image: url("../img/journal-image-3.jpg");
+  background-repeat: no-repeat;
+}
+
+.journal__text-item{
+  padding: 45px 30px;
+}

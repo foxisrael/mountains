@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: "opensans", "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
 
@@ -18,23 +18,21 @@ img {
 }
 
 h1 {
-  font-family: @font-family-bold;
+  font-family: @font-family;
   font-size: @font-size-h1;
   font-weight: bold;
-  color: @color-black;
+  color: @color-white;
 }
 
 h2 {
-  font-family: @font-family-bold;
+  font-family: @font-family;
   font-size: @font-size-h2;
-  line-height: @line-height-basic;
   color: @color-black;
 }
 
 h3 {
-  font-family: @font-family-bold;
+  font-family: @font-family;
   font-size: @font-size-h3;
-  font-weight: bold;
   color: @color-black;
 }
 
@@ -47,7 +45,7 @@ p {
 }
 
 a {
-  font-family: @font-family-bold;
+  font-family: @font-family;
   text-decoration: none;
 }
 
@@ -59,36 +57,19 @@ ul {
 li{
   text-decoration: none;
   display: inline-block;
-}
-
-button {
-  border: 0;
-  background: none;
-  outline: none;
-  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .clearfix::after {
   display: table;
   clear: both;
   content: "";
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    width: 100%;
-    padding: 0 50px;
-  }
-}
-@media (min-width: 1150px) {
-  .wrapper {
-    padding: 0 50px;
-  }
 }
