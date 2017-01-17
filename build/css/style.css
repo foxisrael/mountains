@@ -418,3 +418,6 @@ li {
 .travel__item-5 {
   background: url("../img/travel-image-5.jpg") no-repeat;
 }
+.brands a {
+  display: block;
+}
