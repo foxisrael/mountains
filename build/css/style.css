@@ -68,6 +68,10 @@ li {
   clear: both;
   content: "";
 }
+@font-face {
+  font-family: "bringinregular";
+  src: local("bringin-webfont"), url("../fonts/bringin-webfont.woff") format("woff");
+}
 .btn {
   background: #36aeea;
   min-width: 130px;
@@ -92,10 +96,6 @@ li {
 }
 .btn-content {
   width: 235px;
-}
-@font-face {
-  font-family: "bringinregular";
-  src: local("bringin-webfont"), url("../../fonts/bringin-webfont.woff") format("woff");
 }
 .page-header {
   position: relative;
