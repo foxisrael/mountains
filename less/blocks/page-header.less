@@ -1,13 +1,55 @@
-// Импорт стилей
-@import "variables.less";
-@import "base.less";
-@import "blocks/page-header.less";
-@import "blocks/about.less";
-@import "blocks/journal.less";
-@import "blocks/trip.less";
-@import "blocks/work.less";
-@import "blocks/travel.less";
-@import "blocks/gallery.less";
-@import "blocks/brands.less";
-@import "blocks/clients.less";
-@import "blocks/page-footer.less";
+.page-header{
+  position: relative;
+  width: 100vw;
+  min-height: 700px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  background: url("../img/header-image.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page-header__menu{
+  background: rgba(255, 255, 255, 0.7);
+  padding: 22px 0;
+  height: 90px;
+}
+
+.page-header__menu .wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-header__logo{
+  display: block;
+  font-family: "bringinregular";
+  font-size: 29px;
+  margin-right: 60px;
+}
+
+.page-header__logo--blue{
+  color: @color-blue;
+}
+
+.page-header__logo--gray{
+  color: @color-gray;
+}
+
+.page-header__menu ul{
+  margin-right: 275px;
+}
+
+.page-header__menu-item{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 25px;
+  color: @color-gray;
+  margin-right: 25px;
+}
+
+.page-header__menu-item--active{
+  border-bottom: 2px solid @color-blue;
+}
