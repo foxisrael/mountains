@@ -1,13 +1,49 @@
-// Импорт стилей
-@import "variables.less";
-@import "base.less";
-@import "blocks/page-header.less";
-@import "blocks/about.less";
-@import "blocks/journal.less";
-@import "blocks/trip.less";
-@import "blocks/work.less";
-@import "blocks/travel.less";
-@import "blocks/gallery.less";
-@import "blocks/brands.less";
-@import "blocks/clients.less";
-@import "blocks/page-footer.less";
+.travel{
+  background-image: url("../img/travel-bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  width: 100vw;
+  min-height: 1075px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.travel__items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1140px;
+  background-image: url("../img/travel-bg-map.png");
+  background-repeat: no-repeat;
+}
+
+.travel__item{
+  width: 200px;
+  height: 380px;
+  border-radius: 5px;
+}
+
+.travel__item-1{
+  background: url("../img/travel-image-1.jpg") no-repeat;
+}
+
+.travel__item-2{
+  background: url("../img/travel-image-2.jpg") no-repeat;
+}
+
+.travel__item-3{
+  background: url("../img/travel-image-3.jpg") no-repeat;
+}
+
+.travel__item-4{
+  background: url("../img/travel-image-4.jpg") no-repeat;
+}
+
+.travel__item-5{
+  background: url("../img/travel-image-5.jpg") no-repeat;
+}

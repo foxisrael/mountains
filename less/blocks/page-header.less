@@ -8,7 +8,7 @@
   margin-right: -50vw;
   overflow: hidden;
   background: url("../img/header-image.jpg") no-repeat;
-  background-size: cover;
+  background-position: center;
 }
 
 .page-header__menu{
@@ -52,4 +52,64 @@
 
 .page-header__menu-item--active{
   border-bottom: 2px solid @color-blue;
+}
+
+.page-header__title{
+  width: 490px;
+  line-height: 35px;
+  letter-spacing: 5px;
+}
+
+.page-header__content{
+  display: block;
+  position: relative;
+  width: 1140px;
+  margin-top: 80px;
+  border-left: 3px solid @color-white;
+  border-right: 3px solid @color-white;
+  border-bottom: 3px solid @color-white;
+  padding: 30px;
+}
+
+.page-header__content::before{
+  display: block;
+  position: relative;
+  content: "";
+  width: 730px;
+  height: 3px;
+  top: -30px;
+  left: -30px;
+  background: @color-white;
+}
+
+.page-header__content::after{
+  display: block;
+  position: relative;
+  content: "";
+  width: 200px;
+  height: 3px;
+  top: -300px;
+  right: -910px;
+  background: @color-white;
+}
+
+.page-header__content span{
+  font-family: "bringinregular";
+  font-size: 66px;
+  font-weight: normal;
+  color: @color-blue;
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+
+.page-header__big-letter{
+  text-transform: uppercase;
+}
+
+.page-header__text{
+  width: 440px;
+  font-size: 18px;
+  line-height: 29px;
+  color: @color-white;
+  margin-bottom: 25px;
 }
