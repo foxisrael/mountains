@@ -19,16 +19,22 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   color: #2c2e37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #2c2e37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 p {
   font-size: 14px;
@@ -76,6 +82,9 @@ li {
   font-size: 16px;
   letter-spacing: 2px;
 }
+.btn-trip {
+  width: 225px;
+}
 .about {
   display: -ms-flexbox;
   display: flex;
@@ -88,14 +97,30 @@ li {
   width: 350px;
 }
 .journal {
-  padding: 115px auto 90px;
+  padding: 115px 0 90px;
+  height: 1065px;
+}
+.journal__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.journal__title::before {
+  display: block;
+  position: relative;
+  content: "";
+  top: -35px;
+  width: 81px;
+  height: 7px;
+  margin: 0 auto;
+  background-image: url("../img/icon-line.svg");
 }
 .journal__items {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   width: 1140px;
   height: 760px;
 }
@@ -117,4 +142,107 @@ li {
 }
 .journal__text-item {
   padding: 45px 30px;
+}
+.icon-heart,
+.icon-list,
+.icon-drop {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  bottom: -140px;
+}
+.journal__rubric {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #36aeea;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.journal__item-title {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #2c2e37;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.journal__item-text {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #949494;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.journal__item-number {
+  display: block;
+  font-family: "times-new-roman";
+  font-style: italic;
+  font-size: 14px;
+  color: #2c2e37;
+  text-align: center;
+}
+.trip {
+  position: relative;
+  width: 100vw;
+  min-height: 650px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 145px 0 245px;
+  background-image: url("../img/trip-bg-image.png");
+  background-position: center bottom;
+}
+.trip__title {
+  display: block;
+  margin-bottom: 25px;
+}
+.trip__title::before {
+  display: block;
+  position: relative;
+  content: "";
+  top: -35px;
+  width: 81px;
+  height: 7px;
+  background-image: url("../img/icon-line.svg");
+}
+.trip__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #949494;
+  margin-bottom: 30px;
+}
+.trip__form {
+  width: 855px;
+  height: 60px;
+  background: #fff;
+}
+.trip__form fieldset {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.trip__form input[type="text"],
+.trip__form input[type="tel"] {
+  display: inline-block;
+  outline: none;
+  border: none;
+  height: 60px;
+  padding-left: 20px;
+  width: 310px;
+}
+.trip__form placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #949494;
 }

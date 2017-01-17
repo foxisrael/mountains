@@ -1,13 +1,65 @@
-// Импорт стилей
-@import "variables.less";
-@import "base.less";
-@import "blocks/page-header.less";
-@import "blocks/about.less";
-@import "blocks/journal.less";
-@import "blocks/trip.less";
-@import "blocks/work.less";
-@import "blocks/travel.less";
-@import "blocks/gallery.less";
-@import "blocks/brands.less";
-@import "blocks/clients.less";
-@import "blocks/page-footer.less";
+.trip {
+    position: relative;
+    width: 100vw;
+    min-height: 650px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    padding: 145px 0 245px;
+    background-color: #f6f4f4;
+    background-image: url("../img/trip-bg-image.png");
+    background-position: center bottom;
+}
+
+.trip__title{
+  display: block;
+  margin-bottom: 25px;
+}
+
+.trip__title::before{
+  display: block;
+  position: relative;
+  content: "";
+  top: -35px;
+  width: 81px;
+  height: 7px;
+  background-image: url("../img/icon-line.svg");
+}
+
+.trip__text{
+  font-family: @font-family;
+  font-size: 16px;
+  color: @color-gray;
+  margin-bottom: 30px;
+}
+
+.trip__form{
+  width: 855px;
+  height: 60px;
+  background: @color-white;
+}
+
+.trip__form fieldset{
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trip__form input[type="text"],
+.trip__form input[type="tel"]{
+  display: inline-block;
+  outline: none;
+  border: none;
+  height: 60px;
+  padding-left: 20px;
+  width: 310px;
+}
+
+.trip__form placeholder{
+  font-family: @font-family;
+  font-size: 16px;
+  color: @color-gray;
+}
