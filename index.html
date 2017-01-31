@@ -39,14 +39,16 @@
         </header>
         <main>
             <section class="about">
-                <div class="about__content">
-                    <h3 class="about__title">About us</h3>
-                    <p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
-                    <button class="btn btn-about" type="submit">Read more</button>
-                </div>
-                <div class="about__images">
-                    <img class="about__image-big" src="img/about-image-1.jpg" width="806" height="570" alt="#">
-                    <img class="about__image-small" src="img/about-image-2.jpg" width="350" height="350" alt="#">
+                <div class="wrapper">
+                    <div class="about__content">
+                        <h3 class="about__title">About us</h3>
+                        <p class="about__text">Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+                        <button class="btn btn-about" type="submit">Read more</button>
+                    </div>
+                    <div class="about__images">
+                        <img class="about__image-big" src="img/about-image-1.jpg" width="806" height="570" alt="#">
+                        <img class="about__image-small" src="img/about-image-2.jpg" width="350" height="350" alt="#">
+                    </div>
                 </div>
             </section>
             <section class="journal">
@@ -114,75 +116,102 @@
                 <h2 class="journal__title">HOW WE WORK</h2>
                 <div class="work__items">
                     <div class="work__item">
-                        <span>1</span>
+                        <span class="work__item-number work__item-number-1">1</span>
                         <img class="work__image-1" src="img/work-image-1.png" width="179" height="179" alt="#">
-                        <b>Lorem ipsum dolor sit</b>
-                        <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <b class="work__item-title">Lorem ipsum dolor sit</b>
+                        <p class="work__item-text">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                     </div>
                     <div class="work__item">
-                        <span>2</span>
+                        <span class="work__item-number work__item-number-2">2</span>
                         <img class="work__image-2" src="img/work-image-2.png" width="179" height="179" alt="#">
-                        <b>Lorem ipsum dolor sit</b>
-                        <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <b class="work__item-title">Lorem ipsum dolor sit</b>
+                        <p class="work__item-text">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                     </div>
                     <div class="work__item">
-                        <span>3</span>
+                        <span class="work__item-number  work__item-number-3">3</span>
                         <img class="work__image-3" src="img/work-image-3.png" width="179" height="179" alt="#">
-                        <b>Lorem ipsum dolor sit</b>
-                        <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <b class="work__item-title">Lorem ipsum dolor sit</b>
+                        <p class="work__item-text">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                     </div>
                     <div class="work__item">
-                        <span>4</span>
+                        <span class="work__item-number work__item-number-4">4</span>
                         <img class="work__image-4" src="img/work-image-4.png" width="179" height="179" alt="#">
-                        <b>Lorem ipsum dolor sit</b>
-                        <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <b class="work__item-title">Lorem ipsum dolor sit</b>
+                        <p class="work__item-text">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                     </div>
                 </div>
             </section>
             <section class="travel">
-                <h2 class="travel__title">Travel with us</h2>
                 <div class="wrapper">
                     <div class="travel__items">
+                        <h2 class="travel__title">Travel with us</h2>
                         <div class="travel__item travel__item-1">
-                            <div class="travel__stars"></div>
-                            <b>Carpathian</b>
-                            <p>Lorem ipsum dolor si amet, consectetur</p>
+                            <div class="travel__stars">
+                                <img class="travel__star" src="img/icon-star.png" width="38" height="38">
+                                <img class="travel__star" src="img/icon-star.png" width="38" height="38">
+                                <img class="travel__star" src="img/icon-star.png" width="38" height="38">
+                                <img class="travel__star" src="img/icon-star.png" width="38" height="38">
+                            </div>
+                            <b class="travel__item-title">Carpathian</b>
+                            <p class="travel__item-text">Lorem ipsum dolor si amet, consectetur</p>
                             <div class="travel__prices">
                                 <p class="travel__old-price">3150$</p>
                                 <p class="travel__new-price">$793</p>
                             </div>
                         </div>
                         <div class="travel__item travel__item-2">
-                            <div class="travel__stars"></div>
-                            <b>Alps</b>
-                            <p>Lorem ipsum dolor si amet, consectetur</p>
+                            <div class="travel__stars">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                            </div>
+                            <b class="travel__item-title">Alps</b>
+                            <p class="travel__item-text">Lorem ipsum dolor si amet, consectetur</p>
                             <div class="travel__prices">
                                 <p class="travel__old-price">3150$</p>
                                 <p class="travel__new-price">$1893</p>
                             </div>
                         </div>
                         <div class="travel__item travel__item-3">
-                            <div class="travel__stars"></div>
-                            <b>Pyrenees</b>
-                            <p>Lorem ipsum dolor si amet, consectetur</p>
+                            <div class="travel__stars">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                            </div>
+                            <b class="travel__item-title">Pyrenees</b>
+                            <p class="travel__item-text">Lorem ipsum dolor si amet, consectetur</p>
                             <div class="travel__prices">
                                 <p class="travel__old-price">3150$</p>
                                 <p class="travel__new-price">$2593</p>
                             </div>
                         </div>
                         <div class="travel__item travel__item-4">
-                            <div class="travel__stars"></div>
-                            <b>Rocky</b>
-                            <p>Lorem ipsum dolor si amet, consectetur</p>
+                            <div class="travel__stars">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                            </div>
+                            <b class="travel__item-title">Rocky</b>
+                            <p class="travel__item-text">Lorem ipsum dolor si amet, consectetur</p>
                             <div class="travel__prices">
                                 <p class="travel__old-price">3150$</p>
                                 <p class="travel__new-price">$2123</p>
                             </div>
                         </div>
                         <div class="travel__item travel__item-5">
-                            <div class="travel__stars"></div>
-                            <b>Kavkaz</b>
-                            <p>Lorem ipsum dolor si amet, consectetur</p>
+                            <div class="travel__stars">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                                <img class="travel__star" src="img/icon-star.png" width="22" height="16">
+                            </div>
+                            <b class="travel__item-title">Kavkaz</b>
+                            <p class="travel__item-text">Lorem ipsum dolor si amet, consectetur</p>
                             <div class="travel__prices">
                                 <p class="travel__old-price">3150$</p>
                                 <p class="travel__new-price">$593</p>
@@ -195,26 +224,40 @@
                 <h2 class="gallery__title">Gallery</h2>
                 <div class="gallery__items">
                     <div class="gallery__item">
-                        <img class="gallery__image-1" src="img/gallery-image-1.jpg" alt="#">
-                        <img class="gallery__image-4" src="img/gallery-image-4.jpg" alt="#">
+                        <img class="gallery__image-1" src="img/gallery-image-1.jpg" width="263" height="343" alt="#">
+                        <img class="gallery__image-4" src="img/gallery-image-4.jpg" width="263" height="281" alt="#">
                     </div>
                     <div class="gallery__item">
-                        <img class="gallery__image-2" src="img/gallery-image-2.jpg" alt="#">
-                        <img class="gallery__image-5" src="img/gallery-image-5.jpg" alt="#">
+                        <img class="gallery__image-2" src="img/gallery-image-2.jpg" width="361" height="243" alt="#">
+                        <img class="gallery__image-5" src="img/gallery-image-5.jpg" width="361" height="381" alt="#">
                     </div>
                     <div class="gallery__item">
-                        <img class="gallery__image-3" src="img/gallery-image-3.jpg" alt="#">
-                        <img class="gallery__image-6" src="img/gallery-image-6.jpg" alt="#">
+                        <img class="gallery__image-3" src="img/gallery-image-3.jpg" width="457" height="343" alt="#">
+                        <img class="gallery__image-6" src="img/gallery-image-6.jpg" width="455" height="281" alt="#">
                     </div>
                 </div>
             </section>
             <div class="brands">
-                <a class="brands__slack" href="#"></a>
-                <a class="brands__adobe" href="#"></a>
-                <a class="brands__google" href="#"></a>
-                <a class="brands__facebook" href="#"></a>
-                <a class="brands__spotify" href="#"></a>
-                <a class="brands__nike" href="#"></a>
+                <div class="wrapper">
+                    <a class="brands__slack" href="#">
+                      <img class="brands__slack-logo" src="img/logo-slack.png" width="80" height="24">
+                    </a>
+                    <a class="brands__adobe" href="#">
+                      <img class="brands__adobe-logo" src="img/logo-adobe.png" width="38" height="34">
+                    </a>
+                    <a class="brands__google" href="#">
+                      <img class="brands__google-logo" src="img/logo-google.png" width="80" height="27">
+                    </a>
+                    <a class="brands__facebook" href="#">
+                      <img class="brands__facebook-logo" src="img/logo-facebook.png" width="80" height="17">
+                    </a>
+                    <a class="brands__spotify" href="#">
+                      <img class="brands__spotify-logo" src="img/logo-spotify.png" width="80" height="24">
+                    </a>
+                    <a class="brands__nike" href="#">
+                      <img class="brands__nike-logo" src="img/logo-nike.png" width="70" height="25">
+                    </a>
+                </div>
             </div>
             <section class="clients">
                 <h2 class="clients__title">Our Clients Say</h2>
@@ -243,6 +286,7 @@
             </section>
         </main>
         <footer class="page-footer">
+          <div class="wrapper">
             <div class="page-footer__copyright">
                 <p>All rights reserved 2015</p>
             </div>
@@ -262,6 +306,7 @@
             <div class="page-footer__phone">
                 <b>1 234 243 123</b>
             </div>
+          </div>
         </footer>
     </div>
 </body>
