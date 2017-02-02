@@ -1,12 +1,61 @@
-.page-footer{
-  background-image: url("../img/footer-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100vw;
-  min-height: 1100px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+.page-footer {
+    position: relative;
+}
+
+.page-footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+    z-index: 10;
+}
+
+.page-footer__copyright,
+.page-footer__phone {
+    width: 30%;
+}
+
+.page-footer__copyright-text {
+    font-family: @font-family;
+    font-size: 18px;
+    color: #7ec4d6;
+    font-weight: lighter;
+}
+
+.page-footer__tw {
+    display: inline-block;
+    background-image: url("../img/icon-twitter.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+    margin-right: 5px;
+}
+
+.page-footer__fb {
+    display: inline-block;
+    background-image: url("../img/icon-facebook.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+    margin-right: 5px;
+}
+
+.page-footer__vk {
+    display: inline-block;
+    background-image: url("../img/icon-vk.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+}
+
+.page-footer__phone{
+  text-align: right;
+}
+
+.page-footer__phone-text {
+    font-family: @font-family;
+    font-size: 26px;
+    color: #7ec4d6;
+    font-weight: bold;
 }

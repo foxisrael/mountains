@@ -97,6 +97,9 @@ li {
 .btn-content {
   width: 235px;
 }
+.btn-clients {
+  width: 100%;
+}
 .page-header {
   position: relative;
   width: 100vw;
@@ -742,15 +745,170 @@ li {
 .brands__nike-logo:hover {
   filter: grayscale(0%);
 }
-.page-footer {
+.clients {
   background-image: url("../img/footer-image.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: bottom;
   position: relative;
   width: 100vw;
-  min-height: 1100px;
+  min-height: 1200px;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  padding: 100px 0 100px;
+}
+.clients__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.clients__title::before {
+  display: block;
+  position: relative;
+  content: "";
+  top: -35px;
+  width: 81px;
+  height: 7px;
+  margin: 0 auto;
+  background-image: url("../img/icon-line.svg");
+}
+.clients__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.client__item {
+  width: 45%;
+}
+.client__item-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #949494;
+  font-weight: normal;
+  line-height: 33px;
+  position: relative;
+}
+.client__item-text:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-kavichki.png");
+  width: 24px;
+  height: 22px;
+  top: -30px;
+  left: 0;
+}
+.clients__item-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #36aeea;
+  font-weight: bold;
+}
+.clients__item-name--profession {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #36aeea;
+  font-weight: normal;
+}
+.client__item-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.clients__form {
+  width: 600px;
+  height: 582px;
+  background-image: url("../img/footer-bg-form.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 75px;
+}
+.clients__form-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: #36aeea;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.clients__form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #383e4a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.clients__form input[type="email"],
+.clients__form input[type="tel"],
+.clients__form input[type="text"] {
+  display: inline-block;
+  outline: none;
+  border: none;
+  height: 60px;
+  padding-left: 20px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.page-footer {
+  position: relative;
+}
+.page-footer .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  top: -60px;
+  z-index: 10;
+}
+.page-footer__copyright,
+.page-footer__phone {
+  width: 30%;
+}
+.page-footer__copyright-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #7ec4d6;
+  font-weight: lighter;
+}
+.page-footer__tw {
+  display: inline-block;
+  background-image: url("../img/icon-twitter.png");
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 39px;
+  margin-right: 5px;
+}
+.page-footer__fb {
+  display: inline-block;
+  background-image: url("../img/icon-facebook.png");
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 39px;
+  margin-right: 5px;
+}
+.page-footer__vk {
+  display: inline-block;
+  background-image: url("../img/icon-vk.png");
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 39px;
+}
+.page-footer__phone {
+  text-align: right;
+}
+.page-footer__phone-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  color: #7ec4d6;
+  font-weight: bold;
 }
